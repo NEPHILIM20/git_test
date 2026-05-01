@@ -51,28 +51,31 @@ print(shaped)
 shaped2 = oned.reshape(2,3,2)
 print(shaped2)
 
+#SACRIFICE
 ndmin = np.array([1,2,3,4,5], ndmin=5)
 print(ndmin.shape)
 
+#E
 e = np.array([2,4,6])
 
-#E
 for x in e:
     print(x)
 
+#SACRIFICE
 f = np.array([[1,2], [3,4]])
 for x in f:
     for y in x:
         print(y)
 
+#SACRIFICE
 g= np.array([10,20,30])
-
 for index, x in np.ndenumerate(g):
     print(index, x)
 
 x = np.array([1,2,3])
 y = np.array([4,5,6])
 
+#F
 join = np.concatenate((x,y))
 print(join)
 
