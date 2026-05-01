@@ -29,30 +29,24 @@ print(b.dtype)
 
 copy = b.copy()
 b[0] = 99
-print(b)
-print(copy)
+print(b, copy)
 
 
 c= np.array([1,2,3,4])
 view  = c.view()
 c[0] = 88
-print(c)
-print(view)
+print(c, view)
 
 #D
 d = np.array([[1,2,3,4], [5,6,7,8]])
 print(d.shape)
 
 oned = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
-shaped = oned.reshape(4,3)
-print(shaped)
-
-shaped2 = oned.reshape(2,3,2)
-print(shaped2)
+print(oned.reshape(4,3))
+print(oned.reshape(2,3,2))
 
 #SACRIFICE
-ndmin = np.array([1,2,3,4,5], ndmin=5)
-print(ndmin.shape)
+print(np.array([1,2,3,4,5], ndmin=5))
 
 #E
 e = np.array([2,4,6])
@@ -71,49 +65,39 @@ g= np.array([10,20,30])
 for index, x in np.ndenumerate(g):
     print(index, x)
 
+#F
 x = np.array([1,2,3])
 y = np.array([4,5,6])
 
-#F
-join = np.concatenate((x,y))
-print(join)
+print(np.concatenate((x,y)))
 
-stack = np.stack((x,y), axis=1)
-print(stack)
+print(np.stack((x,y), axis=1))
 
-stack2 = np.vstack((x,y))
-print(stack2)
+print(np.vstack((x,y)))
 
 split = np.array([1,2,3,4,5,6])
-
-threesplit = np.array_split(split, 3)
-print(threesplit)
+print(np.array_split(split, 3))
 
 #G
 h = np.array([1,4,2,4,5,4])
-findindex = np.where(h == 4)
-print(findindex)
+print(np.where(h == 4))
 
 i = np.array([9,3,7,1])
-sort = np.sort(i)
-print(sort)
+print(np.sort(i))
 
+#SACRIFICE
 j= np.array([1,2,3,4,5,6,7,8])
 filter = j%2 == 0
-print(j[filter])
+print(np.array(j[filter]))
 
 #H
-
 from numpy import random
 
-random1 = random.randint(100, size=(5))
-print(random1)
+print(random.randint(100, size=(5)))
 
-random2 = random.choice([3,5,7,9])
-print(random2)
+print(random.choice([3,5,7,9]))
 
 p = np.array([10,20,30])
 q = np.array([1,2,3])
 
-add = np.add(p,q)
-print(add)
+print(np.add(p,q))
