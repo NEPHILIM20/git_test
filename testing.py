@@ -1,5 +1,4 @@
 #A
-
 import numpy as np
 arr1 = np.array([10, 20, 30, 40, 50])
 print (arr1)
@@ -7,7 +6,7 @@ print (arr1)
 arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 print (arr2)
 
-print("Hello",type(arr1))
+print(type(arr1))
 
 arr3 = np.array((7,8,9,10))
 print (arr3)
