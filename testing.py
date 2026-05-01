@@ -45,7 +45,7 @@ oned = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
 print(oned.reshape(4,3))
 print(oned.reshape(2,3,2))
 
-#SACRIFICE
+#S
 print(np.array([1,2,3,4,5], ndmin=5))
 
 #E
@@ -54,13 +54,13 @@ e = np.array([2,4,6])
 for x in e:
     print(x)
 
-#SACRIFICE
+#S
 f = np.array([[1,2], [3,4]])
 for x in f:
     for y in x:
         print(y)
 
-#SACRIFICE
+#S
 g= np.array([10,20,30])
 for index, x in np.ndenumerate(g):
     print(index, x)
@@ -85,7 +85,7 @@ print(np.where(h == 4))
 i = np.array([9,3,7,1])
 print(np.sort(i))
 
-#SACRIFICE
+#S
 j= np.array([1,2,3,4,5,6,7,8])
 filter = j%2 == 0
 print(np.array(j[filter]))
